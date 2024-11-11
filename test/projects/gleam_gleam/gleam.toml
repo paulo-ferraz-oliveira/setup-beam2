@@ -8,9 +8,3 @@ version = "0.1.0"
 # description = "A Gleam library..."
 # repository = { type = "github", user = "username", repo = "project" }
 # links = [{ title = "Website", href = "https://gleam.run" }]
-
-[dependencies]
-gleam_stdlib = "~> 0.18"
-
-[dev-dependencies]
-gleeunit = "~> 0.5"
