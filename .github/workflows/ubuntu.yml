@@ -160,12 +160,12 @@ jobs:
         if: ${{matrix.combo.rebar3-version}}
       - name: Format Gleam project (without installing Erlang/OTP)
         run: |
-          cd test/projects/gleam_gleam
+          cd test/projects/gleamgleam
           gleam format
         if: ${{ matrix.combo.gleam-version && !matrix.combo.otp-version }}
       - name: Run Gleam project tests (without `rebar3`)
         run: |
-          cd test/projects/gleam_gleam
+          cd test/projects/gleamgleam
           gleam test
         if: ${{ matrix.combo.gleam-version && matrix.combo.otp-version && !matrix.combo.rebar3-version }}
       - name: Run escript
